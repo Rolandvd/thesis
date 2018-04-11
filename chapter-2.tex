@@ -1,0 +1,303 @@
+\chapter{Literature}
+\label{ch:literature}
+
+The goal of this part is to give an overview of existing literature on seismic behaviour of unreinforced masonry. First the material itself and its properties is highlighted. It is important to have an extensive understanding of the characteristics of the material itself prior to the main objectives of this thesis. Apart from the material characteristics itself, also the way it can be modelled will be elaborated as well as the modelling of seismic loading. To gain a better understanding of the way seismic loads can be modelled, the seismicity in the Groningen area is elaborated and compared to other seismic regions.
+
+\section{Characteristics of masonry}
+\label{sec:characteristics}
+In masonry individual units are used to build a structure. Often, but not necessarily, these units are bound together by a kind of mortar. Different materials can be used for the masonry units, common materials in the Netherlands are clay- of calcium silicate bricks, but also various types of stone can be used. Masonry is one of the oldest building types around, e.g. the great pyramids in Egypt, and it is still used frequently. One of the reasons it is still used today, it is a highly durable form of construction. However, there are various conditions that can affect the durability of a masonry structure, e.g., the materials used, workmanship, quality of the mortar and the stacking pattern of the units. Apart from the durability, masonry is a cheap way of construction and structures can be built very quickly.
+\subsection{General}
+\label{subsec:general}
+As mentioned there are several factors that influence the performance of masonry. One of them is the stacking pattern. Masonry is an organised arrangement of bricks, whether or not bonded by mortar. The places where mortar can be applied are called the joints between the units, the horizontal joints are also called bed joints and the vertical joints are often referred to as head joints. The arrangement of the bricks may be of influence on the structural behaviour of a masonry structure. \autoref{fig:Masonry} gives an overview of common bond types in masonry. There are some variations on these six bond types, in particular on the vertical joints, which aren't necessarily filled with mortar. The running bond is most frequently used in the Netherlands and also applied in the tests on the TU Delft house.\\
+
+Apart from the bond type also a distinction can be made in construction method. In \autoref{fig:MasonryCons} different construction methods are depicted. Depending on region in the world and building culture of a country different construction methods are applied. In regions with low seismicity it is common to use unreinforced masonry, while in more seismic active regions the application of reinforced- or confined masonry is more usual.
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Running]{\label{fig:run}\includegraphics[width=0.3\textwidth]{Fig_CH2/Running.pdf}} \hfill
+    \subfloat[Running 1/3]{\label{fig:run1/3}\includegraphics[width=0.3\textwidth]{Fig_CH2/Running1-3.pdf}} \hfill
+    \subfloat[Common American]{\label{fig:comA}\includegraphics[width=0.3\textwidth]{Fig_CH2/American.pdf}} \hspace{3em}\\
+    \subfloat[Flamish]{\label{fig:flam}\includegraphics[width=0.3\textwidth]{Fig_CH2/Flamish.pdf}} \hfill
+    \subfloat[English]{\label{fig:eng}\includegraphics[width=0.3\textwidth]{Fig_CH2/English.pdf}} \hfill
+    \subfloat[Stack]{\label{fig:stack}\includegraphics[width=0.3\textwidth]{Fig_CH2/Stack.pdf}}
+    \caption{Bond types in masonry \cite{barraza2012numerical}}
+    \label{fig:Masonry}
+\end{figure}
+
+\subsubsection{Unreinforced masonry}
+Unreinforced masonry (\autoref{fig:urm}) is the typical construction method in areas with low seismicity, e.g., The Netherlands. It is however known to be traditionally used in almost every part of the world for the construction of low-rise houses. Structures with a load-bearing system of unreinforced masonry are vulnerable to seismic events. In many construction codes this type of masonry is categorised as not earthquake resistant.\\
+
+In the construction of URM general purpose mortar or thin layer mortar can be used. In case of general purpose mortar the joint thickness should be about $1,0$ to $1,5 cm$ to avoid structural problems. In a thin layer mortar, e.g. for solid block masonry, the thickness of the joints is usually $1,0$ or $2,0 mm$ thick.
+\subsubsection{Reinforced masonry}
+In reinforced masonry (\autoref{fig:rm}) there are steel bars embedded in the mortar. The bars may be placed in the bed joints and, if present, in the brick holes which are then filled with grout. Both horizontal and vertical reinforcement serve another purpose. The horizontal reinforcement increases the resistance to horizontal loads, hence, it increases the resistance to shear failure. This is an important property in earthquake design, since, as mentioned in \autoref{ch:intro}, earthquake loads can be seen as horizontal loads. Vertical reinforcement, on the other hand, helps to improve the flexural resistance of a masonry structure.\\
+
+In seismic areas this type of masonry is often used and, in some cases, even obligatory. However, not everywhere in the world reinforced masonry is used at a sufficiently high level. Especially in under developed countries this is a serious problem, in particular the grout filling of vertical reinforcement bars is not done in a proper manner. In these countries damage caused by an earthquake has a greater impact since, resources for reconstruction are limited. In other countries the design of reinforced masonry structures is done in a regulated way, e.g., in Chile there is a specific design code for the design of these structures.
+\subsubsection{Confined masonry}
+Confined masonry, like reinforced masonry, is widely used in seismic areas and also sometimes obligatory. This type of masonry, as depicted in \autoref{fig:cm}, is confined within a reinforced concrete frame. This frame consists of vertical tie columns and a horizontal bond beam. The distribution of steel reinforcement in the intersection between the horizontal bond beams and columns is important and may influence the structural behaviour of a confined masonry structure. To obtain a good structural behaviour, design codes usually define requirements for the maximum area to be confined.\\
+
+A distinction can be made in this type of masonry based on the construction order. If the masonry is built and then confined by the reinforced concrete, the structural system is called confined masonry. If, on the other hand, the reinforced concrete frame is built and then the masonry is built within, the structural system is called an infilled frame. The structural behaviour may differ based on the construction order, due to the application of the toothed wall edge in a confined masonry structure \cite{blondet2005construction}.
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Unreinforced masonry]{\label{fig:urm}\includegraphics[width=0.3\textwidth]{Fig_CH2/urm.pdf}} \hfill
+    \subfloat[Reinforced masonry]{\label{fig:rm}\includegraphics[width=0.3\textwidth]{Fig_CH2/rm.pdf}}
+    \hfill
+    \subfloat[Confined masonry]{\label{fig:cm}\includegraphics[width=0.3\textwidth]{Fig_CH2/cm.pdf}}
+    \caption{Construction methods of masonry \cite{barraza2012numerical}}
+    \label{fig:MasonryCons}
+\end{figure}
+
+
+\subsection{Material properties}
+\label{subsec:properties}
+Unreinforced masonry is known for its good resistance to compressive loads and bearing of gravity loads. However, the resistance to lateral loads (e.g., wind- and seismic loads) is significantly lower, this could be primarily attributed to the low tensile strength and quasi brittle behaviour of masonry. To improve the behaviour of masonry, in case of lateral loading, the before mentioned reinforcement and confinement of masonry is often applied. However, in this thesis these two types of masonry are not considered, since the aim is to contribute to the research of masonry houses in the Groningen area, which are predominantly unreinforced masonry houses. From here on unreinforced masonry is referred to as "Masonry".\\
+
+Masonry is a complex material, it is inhomogeneous, composed of bricks and mortar. As depicted in \autoref{fig:Masonry}, there are a lot of different ways to combine these elements, resulting in different compositions, which implies a variety of mechanical behaviour and structural performance. Not only composition, but also the properties of the constituents of masonry are of importance for the overall mechanical behaviour. The constituent elements have a strong non-linear response to high demand loads. Masonry usually has different material properties for the vertical and horizontal direction respectively, hence, it's an anisotropic material.
+
+Traditionally, the compressive strength in the direction normal to the bed joint is regarded as the most relevant material property of masonry. The masonry community has accepted the difference in elastic properties between units and mortar as the precursor of failure \cite{angelillo2014mechanics}. The properties of bricks and mortar are often independently defined through experimental tests. These test are widely described in literature and building codes. When tested separately, interaction between constituents is neglected. This could be a bad approximation, in particular for mortar, since the properties of mortar are affected by their interaction with units during hardening. Nowadays, there are also test to determine the properties of masonry as a whole, considering a special geometric configuration and quality of the materials. These tests are also included in literature and building codes.
+
+\subsubsection{Unit behaviour}
+The properties of masonry units are subject to a great variability, depending on quality of commodities and manufacturing. As also applies to masonry as a whole, units are not homogeneous and isotropic. Material properties are not equal in different directions and also compressive and tensile behaviour are not the same \cite{barraza2012numerical}. Masonry units are classified as a quasi-brittle material with a disordered internal structure. In a quasi-brittle material the transferred force doesn't immediately drop back to zero, it gradually decreases. This behaviour is often referred to as softening. The softening causes localization of deformations that causes quick growth of microcracks into macrocracks and finally to fully open cracks \cite{bakeer2009collapse}.
+
+
+\paragraph{Compressive behaviour of units}
+Masonry bricks, as other stone like materials, have a better performance in compression than in tension, i.e. a higher compressive strength than tensile strength. Usually a compressive test is performed to determine the mechanical behaviour of units. Generally, compressive strength tests provide a good indication of the material quality. To obtain a complete characterization of the bricks, tests are performed in three orthogonal directions. The test results in a stess-strain curve of the bricks, from this curve the characteristic compressive strength can be derived. A typical stress-strain diagram of a quasi-brittle material is shown in \autoref{fig:Compr}.
+
+The compressive behaviour of a quasi-brittle material can be classified in five distinctive components. In \autoref{fig:Compr} the transition of one stage to another is indicated by the letters "A" to "F". In the first stage, "A" to "B", existing pores and micro-cracks are closed, resulting in an increase of stiffness. The second stage, "B" to "C", is characterized as the linear elastic phase. At 30-40\% of the conventional strength cracks are initiated and stable crack growth progresses, "C" to "D". This stage starts at a stress level of $f_{ci}$, mainly tensile cracks occur. The formation and growing of these microcracks result in a non-linear increase of lateral- and volumetric strain. The following stage, "D" to "E", is characterized by crack damage and unstable crack growth. This stage of unstable microcracking starts at a stress level of $f_{cd}$, the crack damage stress. It is associated to the point where volume increase due to the cracking process exceeds the standard volumetric decrease as a result of the axial load, resulting in a volume increase. A rapid and significant increase of the lateral strain can be observed caused by the volume increase. Fracture surfaces parallel to the maximum principle stresses arise from bridging microcracks, until reaching the maximum compressive strength, $f_{c}$. The final stage of softening and growth of macrocracks, "E" to "F", is marked by the weakening of material as strain localization occurs. The rate of change in the stress strain diagram gives an indication of the materials brittleness, i.e., a sudden decrease of stress occurs in a brittle material, where a more gradual decrease is observed in a more ductile material. Macrocracks become unstable and crushing of the material occur a constant stress levels at the end of this stage.\\
+\\
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.55\textwidth]{Fig_CH2/compr.pdf}
+    \caption{Typical compressive behaviour of a quasi-brittle material \cite{bakeer2009collapse}}
+    \label{fig:Compr}
+\end{figure}
+
+The previously mentioned uniaxial compressive test provides a good estimate of the material strength and damage behaviour, however it's not sufficient when the general failure model of the material is important. For geo-materials, e.g. masonry constituents, it can be useful to perform a triaxial labaratory test to get more insight in the real material behaviour. A triaxial test is performed on a cylindrical specimen loaded with an axial- and a lateral stress, $\sigma_{1}$ and $\sigma_{3}$ respectively. In a triaxial state of stress the effective stress equals the stress difference: $\sigma_{1}-\sigma_{3}$. As a result of the triaxial test a failure curve is obtained that describes the relation between the Von Mieses stress (effective stress) and the hydrostatic pressure, \autoref{fig:Triax}. This is one of the most important characteristics to describe the failure behaviour of many geo-materials. When the axial- and lateral stress are equal, the specimen is in hydrostatic compress with a pressure: $p = \frac{\sigma_{1} + 2\sigma_{3}}{3} = \sigma$. From this state the axial- and lateral strain can be measures resulting in a relation between pressure en volume strain, describing the the compaction behaviour of the material. The compaction can generally be divided in 4 stages, \autoref{fig:Hydro}:
+
+\begin{enumerate}
+    \item The initial elastic response, $p_{0}<p<p_{1}$. The elastic bulk modulus, $K$, is the slope of this part.
+    \item Compression of pores in the material, $p_{1}<p<p_{2}$.
+    \item Full compaction of the material by removal of the voids, $p>p_{2}$.
+    \item Unloading from the fully compacted state. The bulk unloading modulus, $K_{un}$, is the slope of this part.
+\end{enumerate}
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Result from a triaxial test: relation between Von Mieses stress and hydrostatic pressure]{\label{fig:Triax}\includegraphics[width=0.45\textwidth]{Fig_CH2/triax.pdf}}
+    \subfloat[Behaviour of geo-materials under hydrostatic compression]{\label{fig:Hydro}\includegraphics[width=0.3\textwidth]{Fig_CH2/hydro.pdf}}
+    \caption{Triaxial test results \cite{bakeer2009collapse,schwer2001laboratory}}
+    \label{fig:Triax-res}
+\end{figure}
+
+
+\paragraph{Tensile behaviour of units}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Fig_CH2/tensile.pdf}
+    \caption{Typical uniaxial tensile behaviour of a quasi-brittle material \cite{bakeer2009collapse}}
+    \label{fig:Tens}
+\end{figure}
+
+The tensile behaviour of masonry, a quasi-brittle material, is characterized by localization and propagation of microcracks. The tensile behaviour can be accurately described by the cohesive crack model proposed by Hillerborg et al. \cite{HILLERBORG1976773}. The tension softening process zone is included by means of a fictitious crack ahead of the visible crack. The Hillerborg model consists of two parts, a real crack, where stresses are no longer transferred and a damaged zone where stresses are still transferred. The model differentiates between two stages of the tensile behaviour:
+
+\begin{enumerate}
+  \item Pre-peak stage, "A" to "C": This stage is characterized by an elasto-plastic stress-strain relationship. The relation holds until the peak stress is reached. After a small linear part, the behaviour starts to be non-linear due to the formation of microcracks. The microcrack formation occurs in a stable manner, cracks only grow at increasing loads.
+  \item Post-peak stage, "C" to "F": The stage is characterized by softening behaviour around the fracture zone. A gradual stress decrease from the uniaxial tensile strength, $f_{t}$, to zero occurs, while strain increases. The behaviour is caused by the bridging of microcracks, forming macrocracks, around the peak load. The load has to be decreased to prevent the unstable macrocracks from uncontrolled growth. As a result of the stress transfer mechanism, caused by the bridging effect, the softening stage of the diagram (softening diagram) has a long tail. The softening diagram is characterized by the tensile strength ($f_{t}$) and fracture energy ($G_{f}^I$), defined as the area under the softening diagram.
+\end{enumerate}
+
+\paragraph{Stiffness of units}
+According to Vasconcelos, a significant non-linear relation between the tensile strength and initial stiffness in granites exists \cite{vasconcelos2005experimental}, \autoref{fig:Tens_stiff}. The initial stiffness is calculated as the slope of the stress-strain relation up to around 20\% of the peak stress. In general, higher values of tensile strength are associated with stiffer granites. This relation is thought to be applicable to quasi-brittle materials in general.
+
+However, the stiffness of masonry units is often obtained from the compressive part of the stress-strain relation. Since the development of microcracks starts at a relatively small load, obtaining the E-modulus from the linear-elastic part of the diagram is not a trivial task. There are various ways to determine the E-modulus from the compressive strength, these methods are based on values around 35\% of the peak load in the $\sigma - \epsilon $-diagram. Effects of non-linear behaviour due to microcracking is small in the first part of the diagram and becomes more significant further in the loading process. According to Barraza \cite{barraza2012numerical}, the stiffness of clay bricks is in a range $150f_{b} \leq E_{b} \leq500f_{b}$. For calcium silicate units, which are used in the TU Delft house, an estimate of the E-modulus is: $E_{b}=355f_{b}$.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Fig_CH2/tens_stiff.pdf}
+    \caption{Correlation stiffness and tensile strength \cite{vasconcelos2005experimental}}
+    \label{fig:Tens_stiff}
+\end{figure}
+
+\subsubsection{Mortar behaviour}
+The material behaviour of mortar is largely depending on the proportion of its components (sand, cement, gypsum and lime). To obtain a good performing masonry structure, in many cases, it's more important to have a good bond between mortar and unit than a high resistance mortar. Depending on the type of brick different types of mortar can be used, i.e. general purpose mortar, thin layer mortar or lightweight mortar. General purpose mortar is traditionally used in joints with a thickness larger than $3.0$ or $4.0$mm, in which only dense aggregate is used. Thin layer mortar is used in joints of $1.0-3.0$mm, or in case of specific requirements. Lightweight mortar is made with special lightweight components, this mortar is also used when specific requirements must be fulfilled. 
+
+\paragraph{Compressive behaviour of mortar}
+The typical stress-strain relation for different types of mortar are shown in \autoref{fig:Compr_mor}, as found in experimental test performed in 2007 \cite{kaushik2007}. Three different grades of mortar were tested, i.e. weak-, intermediate- and strong mortar. The applied volume ratio of cement:lime:sand for the three grades of mortar were 1:0:6, 1:0.5:4.5 and 1:0:6 respectively. The compressive strength of mortar strongly depends on the water-cement ratio and cement content of mortar, it is therefore necessary to perform experimental test to determine strength properties of mortar. Two main methods can be distinguished, one method uses a bulk mortar prism or cylinder, the other method uses a disk from a masonry joint. The latter takes into account water adsorption caused by adjacent units, which influences strength properties. 
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Fig_CH2/Compr_mor.png}
+    \caption{Compressive stress-strain relation in mortar \cite{kaushik2007}}
+    \label{fig:Compr_mor}
+\end{figure}
+
+\paragraph{Tensile behaviour of mortar}
+Various test can be performed to determine the tensile behaviour of mortar, e.g. the “uniaxial tensile strength test”, “splitting tensile test” and the
+“flexural tensile strength”. These test are well known from literature, \autoref{fig:Tens_bend} shows an example of a flexural tensile test performed by Bergami \cite{bergami2007}.
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Mortar before loading]{\label{fig:Tens_bend1}\includegraphics[width=0.45\textwidth]{Fig_CH2/Tens_bend1.png}} \hfill
+    \subfloat[Mortar after flexural crack formation]{\label{fig:Tens_bend2}\includegraphics[width=0.45\textwidth]{Fig_CH2/Tens_bend2.png}}
+    \caption{Flexural tensile test \cite{bergami2007}}
+    \label{fig:Tens_bend}
+\end{figure}
+
+\paragraph{Stiffness of mortar}
+An estimate of the modulus of elasticity of a mortar cube can be made by means of the compressive strength, according to Kaushik, Raj \& Jain \cite{kaushik2007}. Tests on 27 mortar cubes of different grades, shows the stiffness to be in a range $100f_{j} \leq E_{j} \leq 400f_{j}$. The average value of the stiffness can be estimated by the relation $E_{j} = 200f_{j}$, this estimate provides a good co\"{e}fficient of correlation ($C_{r} = 0.90$) with the observed experimental results, \autoref{fig:Stiff_mor}.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Fig_CH2/Stiff_mor.png}
+    \caption{Relation between stiffness and compressive strength in mortar \cite{kaushik2007}}
+    \label{fig:Stiff_mor}
+\end{figure}
+
+\subsubsection{Unit mortar interface behaviour}
+The bond between unit and mortar has a significant influence on the overall behaviour of masonry structures. The unit-mortar interface is often the weakest link, and therefore one of the main reasons for masonry failure, especially in historic masonry. Strength of the unit-mortar interface is highly dependent on various properties, i.e. porosity of the mortar, water retention capacity of the mortar, absorption capacity of the units, curing conditions and binders in the mixture \cite{bakeer2009collapse}. The nonlinear response of joint, caused by the unit-mortar interface, is one of the most relevant features of masonry behaviour. Two main failure mechanisms can be distinguished for the unit-mortar interface, i.e. tensile failure (mode I) and shear failure (mode II), according to Louren{\c{c}}o \cite{lourenco1996}.
+
+\paragraph{Mode I failure}
+Tensile strength of a brick-mortar interfaces can be determined by means of various experimental tests, some tests are described by Almeida, Louren{\c{c}}o \& Barros \cite{almeida2002}. Solid clay and calcium-silicate units were tested in a deformation controlled manner by Van der Pluijm \cite{pluijm1992}, these tests resulted in an exponential tension softening curve. The mode I fracture energy $G^{I}_{f}$ associated with this softening curve ranges between $0.005$ and $0.02 Nmm/mm^2$ for tensile bonding stresses in a range $0.3 -- 0.9 N/mm^2$. The amount of energy required to form a unitary area of a crack along the unit-mortar interface is defined as the fracture energy. Further investigation of the cracked specimen revealed a reduced bond area, the so-called net bond surface, see \autoref{fig:Netbond}. The average surface of this area is about 35\% of the total cross sectional area, for walls this surface is estimated to be about 59\% of the total cross sectional area \cite{lourenco1996}. 
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Test specimen]{\label{fig:Mode1_test}\includegraphics[width=0.2\textwidth]{Fig_CH2/mode1_test.pdf}} \hspace{3em}
+    \subfloat[Typical experimental results of stess-crack displacement for solid clay brick masonry]{\label{fig:Mode1_res}\includegraphics[width=0.40\textwidth]{Fig_CH2/mode1_res.pdf}}
+    \caption{Tensile bond behaviour of masonry \cite{lourenco1996}}
+    \label{fig:Mode1}
+\end{figure}
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Typical net bond surface for tensile specimen of solid clay units]{\label{fig:Netbond_typ}\includegraphics[width=0.4\textwidth]{Fig_CH2/netbond.pdf}} \hspace{3em}
+    \subfloat[Extrapolation of average net bond surface from specimen to wall]{\label{fig:Netbond_avg}\includegraphics[width=0.3\textwidth]{Fig_CH2/netbond_avg.pdf}}
+    \caption{Tensile bond surface \cite{lourenco1996}}
+    \label{fig:Netbond}
+\end{figure}
+
+\paragraph{Mode II failure}
+To determine the shear response of masonry joints it is required to generate a uniform stress state in the joints, a suitable test set-up is necessary. As a result of the equilibrium constraints non-uniform normal stresses develop in the joints, therefore it is difficult to satisfy the condition of a uniform stress state. The usability of different test configurations is widely described in literature, the reader is referred to Van der Pluijm and Atkinson \cite{pluijm1993, Atkinson1989}. The most complete characterization of the masonry shear behaviour, for solid clay and calcium-silicate units, is presented by Van der Pluijm \cite{pluijm1993}. The applied test set-up permits to keep a constant normal confining (compressive) pressure upon shearing. Three different levels of compressive stress were applied: $0.1$, $0.5$ and $1.0 [N/mm^2]$. A constant normal confining pressure upon shearing can be achieved by making use of the test setup as described in \autoref{fig:Shearbond}. Tensile confining stresses were not possible in this test setup and low confining stresses were also problematic, since they resulted in extremely brittle results and potential instability of the setup. Several test specimen with higher confining stresses resulted in shearing of the unit-mortar interface accompanied by diagonal cracking of the units.
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Test specimen before testing]{\label{fig:Setup_shear}\includegraphics[width=0.3\textwidth]{Fig_CH2/mode2_test.pdf}} \hspace{3em}
+    \subfloat[Forces acting on specimen during testing]{\label{fig:Force_shear}\includegraphics[width=0.2\textwidth]{Fig_CH2/mode2_force.pdf}}
+    \caption{Test setup, used by Van der Pluijm \cite{pluijm1993}, to obtain shear bond behaviour \cite{lourenco1996}}
+    \label{fig:Shearbond}
+\end{figure}
+
+Experimental tests on the illustrated setup resulted in an exponential shear softening diagram with a residual dry friction level. These results are depicted in \autoref{fig:Shear_disp}, the mode II fracture energy $G^{II}_{f}$ is defined by the area between the stress-displacement diagram and the residual dry friction. For initial cohesion $[c]$ values ranging from $0.1$ to $1.8 [N/mm^2]$, the mode II fracture energy varies between $0.01$ and $0.25 [Nmm/mm^2]$. From \autoref{fig:Shear_disp} can be concluded the fracture energy is also dependent on the applied confining stress, this relation is also depicted in \autoref{fig:Mode2_frac}.
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Stress-displacement diagram for varying normal stresses]{\label{fig:Shear_disp}\includegraphics[width=0.3\textwidth]{Fig_CH2/tau_disp.pdf}} \hspace{3em}
+    \subfloat[Mode II fracture energy $G^{II}_{f}$ as a function of the normal stress]{\label{fig:Mode2_frac}\includegraphics[width=0.3\textwidth]{Fig_CH2/Gf_sig.pdf}}
+    \caption{Solid clay unit shear bond behaviour in joints as found by Van der Pluijm \cite{pluijm1993, lourenco1996}}
+    \label{fig:Shearbehave}
+\end{figure}
+
+Determining tensile bond strength values by means of evaluating the net bond surface is no longer possible, but the measured values are assumed to hold. Additional material properties can be obtained from experiments. The shear strength can be analysed as a function of the normal stress, based on the Coulomb friction model. The initial friction angle $\phi_0$, associated with this model, is measured by $\tan\phi_0$, which ranges from $0.7$ to $1.2$ for different unit mortar combinations. In a similar manner, the residual friction angle $\phi_r$ is measured by $\tan\phi_r$, which is approximately constant with a value of $0.75$. The uplift of one unit over another unit upon shearing is defined as the dilatancy angle $\psi$, \autoref{fig:Dilatancy}. This angle is not independent on the level of confining stress, a relation between the tangent of the dilatancy angle and the confining stress is presented in \autoref{fig:Tan_psi}. Depending on the roughness of the unit surface, for low confining stress, the value of $\tan\psi$ ranges from $0.2$ to $0.7$. Higher confining stress results in a decrease of $\tan\psi$ to zero. Smoothing of the sheared surface with increasing slip also influence the dilatancy angle, and causes a decrease to zero.
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Coulomb friction law, with initial and residual friction angle]{\label{fig:Friction_law}\includegraphics[width=0.3\textwidth]{Fig_CH2/tau_sig.pdf}} \hspace{3em}
+    \subfloat[Dilatancy angle as the uplift of neighbouring units upon shearing]{\label{fig:Dilatancy}\includegraphics[width=0.2\textwidth]{Fig_CH2/dilatancy.pdf}}
+    \caption{Friction and dilatancy angles as presented by \citet{lourenco1996}}
+    \label{fig:Coulomb}
+\end{figure}
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Tangent of the dilatancy angle $\psi$ as a function of the normal stress]{\label{fig:Tan_psi}\includegraphics[width=0.3\textwidth]{Fig_CH2/dil_sig.pdf}} \hspace{3em}
+    \subfloat[relation between the normal and the shear displacement upon loading]{\label{fig:Norm_shear}\includegraphics[width=0.3\textwidth]{Fig_CH2/ndisp_sdisp.pdf}}
+    \caption{Typical shear bond behaviour of the joints for solid clay units as found by \citet{pluijm1993}, \cite{lourenco1996}}
+    \label{fig:Shear_bond}
+\end{figure}
+
+
+\subsubsection{Masonry as a composite}
+In many cases it is not sufficient to determine the behaviour of all the masonry constituents, masonry should be considered as a whole in these cases. In this manner, interaction between units and mortar and the geometrical arrangement of the units can be included in the results. A variety of test can be performed to determine composite behaviour, one of these test is a compression test for Rilem specimen (\autoref{fig:rilem_test}), resulting in a stress-strain curve. Another test to determine several material properties of masonry is the diagonal compression test on walls. By varying the direction of the load with respect to the the bed joint the influence of this parameter can be determined, this is an interesting alternative in the diagonal compression test \cite{barraza2012numerical}. More extensive research on these test is carried out by Anthoine \cite{anthoine1992}, Bergami \cite{bergami2007}, Charry \cite{charry2010}, Grabowski \cite{grabowski2005}, Page \cite{page1981}. In \autoref{fig:Mas_biax} the failure modes for varying loading cases and varying angles compared to the bed joints $\theta$ as described by Dhanasekar \cite{Dhanasekar1985}.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.45\textwidth]{Fig_CH2/Mas_biax.pdf}
+    \caption{Failure mechanisms of masonry subject to different loads as presented by \citet{Mersch2015}, \cite{Dhanasekar1985}}
+    \label{fig:Mas_biax}
+\end{figure}
+
+\paragraph{Stiffness}
+The stiffness of masonry as a composite is not as widely researched as other material properties. According to Eurocode 6, in the absence of a value determined by experiments, the short term secant modulus of elasticity, used for structural analysis, can be estimated as $K_{E}f{k}$. $K_{E}$. Where $K_{E}$ is a factor (700 in the Dutch National Annex) and $f_{k}$ the characteristic compressive strength \cite[\S 3.7.2]{en1996}. \citet{kaushik2007} found a similar approximation of the modulus of elasticity, i.e. $E_{m}=550f'_{m}$. Where $f'_{m}$ is the compressive prism strength of masonry $(MPa)$. The used data resulted in a relatively good co\"{e}fficient of correlation $(C_{r}=0.63)$ between the experimentally observed and estimated values of $E_{m}$.
+
+\paragraph{Uniaxial compressive behaviour}
+Until the introduction of numerical methods for masonry structures, the compressive strength of masonry in the direction normal to the bed joints was regarded as the sole relevant material property. An often used test to determine this uniaxial compressive strength is the stacked bond prism (\autoref{fig:stack_bond}), however it is not clear how the use of this kind of specimens affect the masonry strength. The before mentioned test on Rilem specimen is commonly accepted to yield the real uniaxial compressive strength, see \autoref{fig:rilem_test}. However, this test is costly to execute and the specimen is relatively large compared to a standard cube or cylinder test for concrete. In the masonry community it is widely excepted that the difference in elastic properties of the unit and mortar is the precursor of failure \cite{lourenco1996}.
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Stacked bond prism]{\label{fig:stack_bond}\includegraphics[width=0.075\textwidth]{Fig_CH2/stack_prism.pdf}} \hspace{3em}
+    \subfloat[Rilem test specimen]{\label{fig:rilem_test}\includegraphics[width=0.2\textwidth]{Fig_CH2/rilem_test.pdf}}
+    \caption{Masonry specimens used to determine uniaxial compressive behaviour \cite{lourenco1996}}
+    \label{fig:Uniax_compr}
+\end{figure}
+
+\paragraph{Uniaxial tensile behaviour}
+In case of loading perpendicular to the bed joint, a rough estimate of the masonry tensile strength is given by the tensile bond strength between the joint and the unit. Tensile failure is generally caused by the relatively low bond strength between the bed joint and unit, therefore this is often a good approximation, see \autoref{fig:Mas_biax} bottom left. 
+In other types of masonry, where unit strength is low and bond strength is higher, failure may occur as a result of stresses exceeding the unit tensile strength. In these cases, e.g. high strength mortar and units with many perforations, which cause a dowel effect, the masonry strength can by approximated by the unit tensile strength.
+
+Two different types of failure can be distinguished, depending on relative strength of units and joints, in case of loading parallel to the bed joint, i.e. a zigzag crack through bed- and head joints and an almost vertical crack through head joints and units. The first type of failure is characterized by a residual plateau upon increasing deformation in the stress-displacement diagram. The post-peak behaviour is generally determined by the fracture energy of the head joints and the post-peak mode II behaviour of bed joints, see \autoref{fig:Mas_biax} top left. The second type of failure is typically represented by a stress-displacement diagram which shows a progressive softening until zero. The post-peak behaviour is generally determined by the fracture energy of the units and head joints, see \autoref{fig:Mas_biax} top middle \cite{lourenco1996}.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.45\textwidth]{Fig_CH2/Biax_fail.pdf}
+    \caption{Failure surface for masonry projected onto the $\sigma_{1}-\sigma_{2}$ plane as presented by \citet{Mersch2015}, \cite{page1981}}
+    \label{fig:Biax_fail}
+\end{figure}
+
+\paragraph{Biaxial behaviour}
+Uniaxial tests can provide a good indication of masonry material behaviour, however it cannot completely describe the constitutive behaviour of masonry subject to biaxial stress states. To obtain a biaxial strength envelope, the influence of biaxial stress state has to be investigated up to peak stress. Since masonry is an anisotropic material, the strength envelope cannot be fully be described in terms of principle stresses. It can be described in terms of the principle stresses, however, rotation angle $\theta$ between principle stresses and material axes should be included. Another way of describing the biaxial stress envelope is in terms of the full stress vector in a fixed set of material axes.
+
+The most complete set of experimental data of masonry subjected to proportional biaxial loading was assembled by \citet{page1981, page1983}. The tests were carried out with half scale solid clay units. Both the orientation of the principal stresses with regard to the material axes and the principal stress ratio considerably influence the failure mode and strength \cite{lourenco1996}. The different modes of failure are illustrated in \autoref{fig:Mas_biax}, see also \autoref{fig:Biax_fail} for the failure surface of masonry projected onto the $\sigma_{1}-\sigma_{2}$ plane.
+
+\newpage
+\section{Modelling of masonry}
+\label{sec:modelling}
+Masonry is a heterogeneous material and its mechanical behaviour is mainly determined by the properties of its constituents, as explained in \autoref{sec:characteristics}. Therefore it is not a trivial task to model the behaviour, let alone a general method to apply when modelling a masonry structure. There has been extensive research on the topic of masonry modelling, resulting in various proposals to model masonry adequately. Every method has its benefits and its shortcomings, the most suitable method is mainly determined by the structure which is modelled. In general, the methods can be classified in two separate categories, i.e. micromodelling and macromodelling.
+
+\subsection{Micro- and macromodelling}
+\label{sec:micromacro}
+The level of detail included in the model is the main difference between micro- and macromodelling, hence, the ability to yield accurate results can be different. In a micromodel the individual components, i.e. units and mortar, are modelled separately, in contrast to a macromodel, where masonry is modelled as a composite \cite{lourenco1996}. Between micromodelling and macromodelling is an intermediate level of detail called simplified micromodelling, shown in \autoref{fig:micromodel_simple}, this type of modelling is also referred to as mesomodelling. 
+
+\begin{figure}[!htb]
+    \centering
+    %\captionsetup{justification=centering}
+    \subfloat[Masonry sample]{\label{fig:masonry_samp}\includegraphics[height=0.12\textwidth]{Fig_CH2/model_masonry.pdf}} \hfill
+    \subfloat[Detailed micromodel]{\label{fig:micro_detail}\includegraphics[height=0.12\textwidth]{Fig_CH2/micromodel_detail.pdf}} \hfill
+    \subfloat[Simplified micromodel]{\label{fig:micromodel_simple}\includegraphics[height=0.12\textwidth]{Fig_CH2/micromodel_simpl.pdf}} \hfill
+    \subfloat[Macromodel]{\label{fig:macromodel}\includegraphics[height=0.12\textwidth]{Fig_CH2/macromodel.pdf}}
+    \caption{Various strategies for masonry modelling as described by \citet{lourenco1996}}
+    \label{fig:Model_strate}
+\end{figure}
+
+As all the individual components in a micromodel are modelled separately, it is a time consuming task to build a model following this approach. Both bricks and mortar are modelled as continuum elements with defined failure criteria. The interfaces between the two are modelled separately by special elements, which can represent a potential crack/slip plane. These elements are given an initial dummy stiffness to avoid interpenetration of the continuum. All the properties of the constituents should be known to obtain a useful model, furthermore, there is a great number of degrees of freedom \cite{Mersch2015}. Due to this detailed level of modelling, most failure mechanisms of masonry are represented in this type of modelling \cite{barraza2012numerical}. Hence, micromodels are particularly useful when studying the behaviour of single structural elements, e.g. a wall of a floor \cite{Mersch2015}.
+
+In a simplified micromodel the units are defined similar to the detailed micromodel, however, the mortar joints and interface elements are lumped in an "average" interface. Each interface consists of mortar and two unit-mortar interfaces. In order to keep the geometry unchanged, the units are expanded. Using this approach implies considering masonry as a set of elastic blocks bounded by potential crack/slip planes at the joints. Poisson's ratio of the mortar can not be included, therefore, accuracy is lost and less failure mechanisms are represented by these models \cite{lourenco1996}.
+
+There isn't a distinction between units, mortar and unit-mortar interfaces in a macromodel, they are smeared out over a homogeneous anisotropic continuum. In general, a macromodel requires less input data than a micromodel and usually it is easier to construct a model following this approach. The reduced time and memory requirements as well as a the user-friendly mesh generation in macromodelling makes it more practise oriented, it is valuable when a compromise between accuracy and efficiency is required. As a result of the way a macromodel is made, they are particularly useful in situations where the general structural behaviour of masonry walls with sufficient large dimensions is of importance, in contrast to micromodelling where local behaviour is of importance. This assumption can be justified when stresses along or across a macrolength are approximately uniform \cite{lourenco1996}.  
+\cite{massart2003}
+% \newpage
+% \section{Seismicity Groningen}
+% ...
+% \subsection{Seismicity of Groningen compared to other seismic areas}
+% ...
+% \subsection{Modelling of seismic loads}
+% ...
